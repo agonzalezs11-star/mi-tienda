@@ -1,0 +1,8 @@
+{% extends "tienda/base.html" %}{% block contenido %}
+<h1>Panel principal</h1><p>Resumen general de Nova Comercial.</p>
+<div class="cards">
+<div class="metric">Clientes<strong>{{ clientes }}</strong></div><div class="metric">Productos<strong>{{ productos }}</strong></div>
+<div class="metric">Proveedores<strong>{{ proveedores }}</strong></div><div class="metric">Ventas<strong>{{ ventas }}</strong></div>
+<div class="metric">Compras<strong>{{ compras }}</strong></div><div class="metric">Productos con stock bajo<strong>{{ stock_bajo }}</strong></div>
+</div><p style="margin-top:22px">Para registrar los detalles de compras y ventas, entra en <a href="/admin/">Administración</a>.</p>
+{% endblock %}

@@ -1,0 +1,2 @@
+{% extends "tienda/base.html" %}{% block contenido %}<section class="panel"><h1>Eliminar {{ titulo }}</h1><p>¿Seguro que deseas eliminar: {{ obj }}?</p>
+<form method="post">{% csrf_token %}<button class="btn danger" type="submit">Sí, eliminar</button> <a href="javascript:history.back()">Cancelar</a></form></section>{% endblock %}
